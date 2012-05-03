@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style type="text/css" media="screen">
+			/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+			
+			/* Reset Styles */
+			body, h1, h2, h3, p{margin:0; padding:0;}
+			table, table tr, table td {border-collapse: collapse; margin: 0; padding: 0;}
+			img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;}
+			
+			body {
+				color: #747474;
+				font-family: 'Lucida Sans', Helvetica, Arial, sans-serif;
+				font-size: 13px;
+			}
+			
+			/* 
+			Fonts and global styles 
+			*/
+			
+			h1, h2, h3 {
+				font-family: Helvetica, Arial, sans-serif;
+				font-weight: bold;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+			
+			.primary {
+				/*@editable*/ color: #5DDBCF !important;
+			}
+			
+			.secondary {
+				/*@editable*/ color: #43A3A0 !important;
+			}
+			
+			.primary-border {
+				border: 1px solid;
+				/*@editable*/ border-color: #5DDBCF;
+			}
+			
+			.secondary-border {
+				border: 1px solid;
+				/*@editable*/ border-color: #43A3A0;
+			}
+			
+			.primary-background {
+				/*@editable*/ background-color: #5DDBCF;
+			}
+			
+			img {
+				max-width: 100%;
+			}
+			
+			p {
+				margin-bottom: 10px;
+			}
+			
+			.readmore {
+				display: block;
+				padding: 5px;
+				
+				font-size: 11px;
+				
+				background: #f1f1f1;
+				
+				border: 1px solid #747474;
+			}
+			
+			a {
+				text-decoration: none;
+				font-style: italic;
+				color: #686868;
+			}
+			
+			.clear {
+				clear: both;
+				width: 0;
+				overflow: auto;
+			}
+			
+			/* 
+			Main Layout
+			*/
+			#layout {
+				width: 600px;
+				
+				background: #e8e8e8;
+				
+				text-align: left;
+			}
+			
+			#layout table {
+				width: 100%;
+			}
+			
+			tr.separator {
+				height: 10px;
+				
+				background: transparent;
+				border: none;
+			}
+			
+			td {
+				vertical-align: top;
+			}
+			
+			tr.threecol td {
+				width: 32%;
+			}
+			
+			tr.threecol td.separator {
+				width: 2%;
+				
+				background: transparent;
+				border: none;
+			}
+			
+			/*
+			Content
+			*/
+			#content {
+				padding: 10px;
+			}
+			
+			div.heading h2 {
+				float: left;
+				padding: 10px;
+				margin-right: 10px;
+				
+				background: #383838;
+				
+				color: #e8e8e8;
+			}
+			
+			div.heading,
+			#content table {
+				margin-bottom: 10px;
+			}
+			
+			div.heading a {
+				display: block;
+				padding: 10px;
+				
+				line-height: 22px;
+				font-size: 11px;
+			}
+			
+			/*
+			Featured
+			*/
+			#featured {
+				background: #ffffff;
+				border: 1px solid #747474;
+			}
+			
+			#featured tr td {
+				padding: 10px 10px 0 10px;
+				vertical-align: top;
+			}
+			
+			#featured .readmore {
+				padding: 5px 10px;
+				margin-top: 10px;
+				
+				border-bottom: none;
+				border-left: none;
+				border-right: none;
+			}
+			
+			/*
+			Secondary
+			*/
+			.secondary-story {
+				padding: 5px;
+				margin-bottom: 10px;
+				
+				background: #ffffff;
+			}
+			
+			/*
+			Events
+			*/
+			.event {
+				width: auto;
+				padding: 5px 5px 0 5px;
+				vertical-align: top;
+				margin-bottom: 5px;
+				
+				background: #ffffff;
+				border: 1px solid #747474;
+			}
+			
+			/*
+			Sermon
+			*/
+			#sermon img {
+				max-width: 150px;
+			}
+			
+			/*
+			Footer
+			*/
+			#footer {
+				padding: 10px;
+				
+				background: #383838;
+			}
+			
+			.service-time {
+				float: left;
+				display: block;
+				width: 38px;
+				height: 38px;
+				margin-right: 10px;
+				margin-top: 5px;
+				
+				font-size: 11px;
+				font-weight: bold;
+				font-family: Helvetica, Arial, sans-serif;
+				line-height: 36px;
+				color: #383838;
+				text-align: center;
+				
+				background-image: url('https://s3.amazonaws.com/rh-org/ebulletin-assets/circle-icon.png');
+				background-repeat: no-repeat;
+			}
+			
+			.address {
+				background: url('https://s3.amazonaws.com/rh-org/ebulletin-assets/address-icon.png') no-repeat;
+				padding-left: 15px;
+			}
+			
+			.phone {
+				background: url('https://s3.amazonaws.com/rh-org/ebulletin-assets/phone-icon.png') no-repeat;
+				padding-left: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<table id="layout" border="0" cellspacing="0" cellpadding="0">
+				<tr id="header">
+					<td>
+						<img align="middle" src="https://s3.amazonaws.com/rh-org/ebulletin-assets/intro-missionviejo.jpg" alt="ROCKHARBOR Mission Viejo" />
+					</td>
+				</tr>
+				
+				<tr id="header-graphic">
+					<td mc:edit="header-graphic" mc:allowdesigner>
+						<img src="https://s3.amazonaws.com/rh-org/ebulletin-assets/header-missionviejo.jpg" alt="Mission Viejo eBulletin" />
+					</td>
+				</tr>
+
+				<tr>
+					<td id="content">
+						<div class="heading">
+							<h2>Feature Stories</h2>
+							<div class="clear"></div>
+						</div>
+						
+						<table id="featured" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<h2 class="primary" mc:edit="featured-story-title">Story Title</h2>
+								</td>
+							</tr>
+							<tr>
+								<td mc:edit="featured-story">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit congue mauris, quis mollis velit consectetur non. Donec mollis laoreet bibendum. Aenean urna urna, egestas eget varius a, vulputate quis dolor. Cras fermentum nunc vel tortor egestas a convallis elit volutpat. Praesent sit amet nisl nec sapien consequat fringilla. Fusce rutrum nunc eu urna dictum sodales. In sit amet sodales lectus. Integer nunc ligula, mattis in vulputate vel, ullamcorper non ligula.
+								</td>
+							</tr>
+							<tr>
+								<td class="readmore" mc:edit="featured-story-link">
+									<a href="http://rockharbor.org" title="Read More">Read the rest of this story.</a>
+								</td>
+							</tr>
+						</table>
+
+						<table id="secondary" border="0" cellspacing="0" cellpadding="0">
+							<tr class="threecol">
+								<td class="primary-border secondary-story" mc:edit="secondary-item">
+									<h2>Secondary Item Title</h2>
+									<p>Secondary Item text</p>
+									<span class="readmore">
+										<a href="http://rockharbor.org" title="Read More">Read this story</a>
+									</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td class="primary-border secondary-story" mc:edit="secondary-item">
+									<h2>Secondary Item Title</h2>
+									<p>Secondary Item text</p>
+									<span class="readmore">
+										<a href="http://rockharbor.org" title="Read More">Read this story</a>
+									</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td class="primary-border secondary-story" mc:edit="secondary-item">
+									<h2>Secondary Item Title</h2>
+									<p>Secondary Item text</p>
+									<span class="readmore">
+										<a href="http://rockharbor.org" title="Read More">Read this story</a>
+									</span>
+								</td>
+							</tr>
+							<tr class="separator"><td colspan="5"></td></tr>
+							<tr>
+								<td>
+									<div class="heading">
+										<h2>This Weekend</h2>
+										<div class="clear"></div>
+									</div>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td colspan="3">
+									<div class="heading">
+										<h2>Coming up @ RHMV</h2>
+										<a href="http://rockharbor.org">See full calendar</a>
+										<div class="clear"></div>
+									</div>
+								</td>
+							</tr>
+							<tr class="threecol">
+								<td id="sermon">
+									<div mc:edit="sermon-graphic" mc:allowdesigner>
+										<img src="http://rh-org.s3.amazonaws.com/wp-content/uploads/2012/04/More-Archive.jpg" />
+									</div>
+									<h2 class="secondary" mc:edit="sermon-date">Nov 12</h2>
+									<p mc:edit="sermon-title">The Title</p>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td>
+									<div class="event">
+										<h2 mc:edit="event-date" class="secondary">Dec 25</h2>
+										<p mc:edit="event-details"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+									<div class="event">
+										<h2 mc:edit="event-date" class="secondary">Dec 25</h2>
+										<p mc:edit="event-details"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+									<div class="event">
+										<h2 mc:edit="event-date" class="secondary">Dec 25</h2>
+										<p mc:edit="event-details"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td>
+									<div class="event">
+										<h2 mc:edit="event-date" class="secondary">Dec 25</h2>
+										<p mc:edit="event-details"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+									<div class="event">
+										<h2 mc:edit="event-date" class="secondary">Dec 25</h2>
+										<p mc:edit="event-details"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+									<div class="event">
+										<h2 mc:edit="event-date" class="secondary">Dec 25</h2>
+										<p mc:edit="event-details"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+								</td>
+							</tr>
+						</table>
+						
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="footer" mc:edit="footer">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr class="threecol">
+								<td>
+									<h2>RH Mission Viejo Services</h2>
+									<span class="service-time">9am</span>
+									<span class="service-time">11am</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td>
+									<p class="address">*|HTML:LIST_ADDRESS_HTML|*</p>
+									<p class="phone">(714) 384.0914</p>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td>
+									<a href="http://facebook.com/RHMissionViejo">
+										<img src="https://s3.amazonaws.com/rh-org/ebulletin-assets/bookface-icon.png" alt="Facebook" />
+									</a>
+									<a href="http://twitter.com/RHMissionViejo">
+										<img src="https://s3.amazonaws.com/rh-org/ebulletin-assets/twitter-icon.png" alt="Twitter" />
+									</a>
+									<a href="https://core.rockharbor.org/campuses/view/Campus:5">
+										<img src="https://s3.amazonaws.com/rh-org/ebulletin-assets/core-icon.png" alt="CORE" />
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="separator"><td></td></tr>
+				<tr>
+					<td>
+						<p style="text-align:center">
+							<a href="*|ARCHIVE|*" class="adminText">Trouble viewing this email?</a>
+							|
+							<a href="*|UNSUB|*">Unsubscribe *|EMAIL|*</a>
+							|
+							<a href="*|UPDATE_PROFILE|*">Update your profile</a>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>
