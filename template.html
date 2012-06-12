@@ -115,7 +115,7 @@
 				width: 32%;
 			}
 			
-			tr.threecol td.separator {
+			tr td.separator {
 				width: 2%;
 				
 				background: transparent;
@@ -185,6 +185,17 @@
 				margin-bottom: 10px;
 				
 				background: #ffffff;
+			}
+			
+			.secondary-story .details p {
+				font-size: 10px;
+				line-height: 12px;
+				
+				margin-bottom: 0;
+			}
+			
+			.secondary-story .details {
+				margin-bottom: 5px;
 			}
 			
 			/*
@@ -282,7 +293,58 @@
 				<tr>
 					<td id="content">
 						<div class="heading">
-							<h2>Feature Stories</h2>
+							<h2>Featured Events</h2>
+							<div class="clear"></div>
+						</div>
+						
+						<table id="secondary" border="0" cellspacing="0" cellpadding="0">
+							<tr class="threecol">
+								<td class="primary-border secondary-story">
+									<h2 mc:edit="secondary-item-title-1">An Event</h2>
+									<div class="details" mc:edit="secondary-item-details-1">
+										<p>Secondary Item details</p>
+										<p>August 21</p>
+									</div>
+									<div mc:edit="secondary-item-1">
+										<p>Secondary Item text</p>
+									</div>
+									<span class="readmore" mc:edit="secondary-item-link-1">
+										<a href="http://rockharbor.org" title="More info">Click for more info</a>
+									</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td class="primary-border secondary-story">
+									<h2 mc:edit="secondary-item-title-2">An Event</h2>
+									<div class="details" mc:edit="secondary-item-details-2">
+										<p>Secondary Item details</p>
+										<p>August 21</p>
+									</div>
+									<div mc:edit="secondary-item-2">
+										<p>Secondary Item text</p>
+									</div>
+									<span class="readmore" mc:edit="secondary-item-link-2">
+										<a href="http://rockharbor.org" title="More info">Click for more info</a>
+									</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td class="primary-border secondary-story">
+									<h2 mc:edit="secondary-item-title-3">An Event</h2>
+									<div class="details" mc:edit="secondary-item-details-3">
+										<p>Secondary Item details</p>
+										<p>August 21</p>
+									</div>
+									<div mc:edit="secondary-item-3">
+										<p>Secondary Item text</p>
+									</div>
+									<span class="readmore" mc:edit="secondary-item-link-3">
+										<a href="http://rockharbor.org" title="More info">Click for more info</a>
+									</span>
+								</td>
+							</tr>
+						</table>
+						
+						<div class="heading">
+							<h2>Featured Story</h2>
 							<div class="clear"></div>
 						</div>
 						
@@ -303,49 +365,17 @@
 								</td>
 							</tr>
 						</table>
-
-						<table id="secondary" border="0" cellspacing="0" cellpadding="0">
-							<tr class="threecol">
-								<td class="primary-border secondary-story">
-									<h2 mc:edit="secondary-item-title-1">Secondary Item Title</h2>
-									<div mc:edit="secondary-item-1">
-										<p>Secondary Item text</p>
-									</div>
-									<span class="readmore" mc:edit="secondary-item-link-1">
-										<a href="http://rockharbor.org" title="Read More">Read this story</a>
-									</span>
-								</td>
-								<td class="separator">&nbsp;</td>
-								<td class="primary-border secondary-story">
-									<h2 mc:edit="secondary-item-title-2">Secondary Item Title</h2>
-									<div mc:edit="secondary-item-2">
-										<p>Secondary Item text</p>
-									</div>
-									<span class="readmore" mc:edit="secondary-item-link-2">
-										<a href="http://rockharbor.org" title="Read More">Read this story</a>
-									</span>
-								</td>
-								<td class="separator">&nbsp;</td>
-								<td class="primary-border secondary-story">
-									<h2 mc:edit="secondary-item-title-3">Secondary Item Title</h2>
-									<div mc:edit="secondary-item-3">
-										<p>Secondary Item text</p>
-									</div>
-									<span class="readmore" mc:edit="secondary-item-link-3">
-										<a href="http://rockharbor.org" title="Read More">Read this story</a>
-									</span>
-								</td>
-							</tr>
-							<tr class="separator"><td colspan="5"></td></tr>
+						
+						<table border="0" cellspacing="0" cellpadding="0">
 							<tr>
-								<td>
+								<td style="width:32%">
 									<div class="heading">
 										<h2>This Weekend</h2>
 										<div class="clear"></div>
 									</div>
 								</td>
 								<td class="separator">&nbsp;</td>
-								<td colspan="3">
+								<td>
 									<div class="heading">
 										<h2>Coming up @ RHMV</h2>
 										<a href="http://missionviejo.rockharbor.org/calendar">See full calendar</a>
@@ -353,7 +383,7 @@
 									</div>
 								</td>
 							</tr>
-							<tr class="threecol">
+							<tr>
 								<td id="sermon">
 									<div mc:edit="sermon-graphic" mc:allowdesigner>
 										<img src="http://rh-org.s3.amazonaws.com/wp-content/uploads/2012/04/More-Archive.jpg" />
@@ -362,7 +392,7 @@
 									<p mc:edit="sermon-title">The Title</p>
 								</td>
 								<td class="separator">&nbsp;</td>
-								<td colspan="3">
+								<td>
 									<table border="0" cellspacing="0" cellpadding="0">
 										<tr mc:repeatable>
 											<td>
@@ -379,12 +409,11 @@
 												</div>
 											</td>
 										</tr>
-										
 									</table>
 								</td>
 							</tr>
 						</table>
-						
+
 					</td>
 				</tr>
 				
