@@ -238,24 +238,34 @@
 				padding: 0 10px;
 			}
 			
-			.service-time {
-				float: left;
-				display: block;
-				width: 38px;
-				height: 38px;
-				margin-right: 10px;
+			table#service-times {
 				margin-top: 5px;
+			}
+			
+			table#service-times td.time div {
+				width: 37px;
+				height: 37px;
+				margin-bottom: 5px;
+			}
+			
+			table#service-times td.time span {
+				vertical-align: middle;
+				display: table-cell;
+				width: 37px;
+				height: 37px;
+				
+				-webkit-border-radius: 36px;
+				-moz-border-radius: 36px;
+				border-radius: 36px;
 				
 				font-size: 11px;
 				font-weight: bold;
 				font-family: Helvetica, Arial, sans-serif;
-				line-height: 36px;
+				line-height: 11px;
 				color: #383838;
 				text-align: center;
-				text-indent: -3px;
 				
-				background-image: url('https://s3.amazonaws.com/rh-org/ebulletin-assets/circle-icon.png');
-				background-repeat: no-repeat;
+				background: #E8E8E8;
 			}
 			
 			.address {
@@ -423,8 +433,18 @@
 							<tr class="threecol">
 								<td>
 									<h2>RH Mission Viejo Services</h2>
-									<span class="service-time">9am</span>
-									<span class="service-time">11am</span>
+									<table id="service-times">
+										<tr class="threecol">
+											<td class="time"><div><span>Sat<br />6pm</span></div></td>
+											<td class="time"><div><span>Sun<br />9am</span></div></td>
+											<td class="time"><div><span>Sun<br />11am</span></div></td>
+										</tr>
+										<tr>
+											<td class="time"><div><span>Sun<br />7pm</span></div></td>
+											<td class="time"><div><span>Sun<br />9pm</span></div></td>
+											<td>&nbsp;</td>
+										</tr>
+									</table>
 								</td>
 								<td class="separator">
 									<img src="https://s3.amazonaws.com/rh-org/ebulletin-assets/vertical-bar.png" />
