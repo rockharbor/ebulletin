@@ -43,6 +43,14 @@
 				border-color: #5DDBCF;
 			}
 			
+			.top {
+				border-bottom: 0;
+			}
+			
+			.bottom {
+				border-top: 0;
+			}
+			
 			.secondary-border {
 				border: 1px solid;
 				border-color: #43A3A0;
@@ -198,6 +206,10 @@
 				margin-bottom: 5px;
 			}
 			
+			.secondary-story.bottom {
+				padding-top: 0;
+			}
+			
 			/*
 			Events
 			*/
@@ -309,7 +321,7 @@
 						
 						<table id="secondary" border="0" cellspacing="0" cellpadding="0">
 							<tr class="threecol">
-								<td class="primary-border secondary-story">
+								<td class="primary-border secondary-story top">
 									<h2 mc:edit="secondary-item-title-1">An Event</h2>
 									<div class="details" mc:edit="secondary-item-details-1">
 										<p>Secondary Item details</p>
@@ -318,12 +330,9 @@
 									<div mc:edit="secondary-item-1">
 										<p>Secondary Item text</p>
 									</div>
-									<span class="readmore" mc:edit="secondary-item-link-1">
-										<a href="http://rockharbor.org" title="More info">Click for more info</a>
-									</span>
 								</td>
 								<td class="separator">&nbsp;</td>
-								<td class="primary-border secondary-story">
+								<td class="primary-border secondary-story top">
 									<h2 mc:edit="secondary-item-title-2">An Event</h2>
 									<div class="details" mc:edit="secondary-item-details-2">
 										<p>Secondary Item details</p>
@@ -332,12 +341,9 @@
 									<div mc:edit="secondary-item-2">
 										<p>Secondary Item text</p>
 									</div>
-									<span class="readmore" mc:edit="secondary-item-link-2">
-										<a href="http://rockharbor.org" title="More info">Click for more info</a>
-									</span>
 								</td>
 								<td class="separator">&nbsp;</td>
-								<td class="primary-border secondary-story">
+								<td class="primary-border secondary-story top">
 									<h2 mc:edit="secondary-item-title-3">An Event</h2>
 									<div class="details" mc:edit="secondary-item-details-3">
 										<p>Secondary Item details</p>
@@ -346,6 +352,22 @@
 									<div mc:edit="secondary-item-3">
 										<p>Secondary Item text</p>
 									</div>
+								</td>
+							</tr>
+							<tr class="threecol">
+								<td class="primary-border secondary-story bottom">
+									<span class="readmore" mc:edit="secondary-item-link-1">
+										<a href="http://rockharbor.org" title="More info">Click for more info</a>
+									</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td class="primary-border secondary-story bottom">
+									<span class="readmore" mc:edit="secondary-item-link-2">
+										<a href="http://rockharbor.org" title="More info">Click for more info</a>
+									</span>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td class="primary-border secondary-story bottom">
 									<span class="readmore" mc:edit="secondary-item-link-3">
 										<a href="http://rockharbor.org" title="More info">Click for more info</a>
 									</span>
