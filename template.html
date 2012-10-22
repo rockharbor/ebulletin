@@ -227,6 +227,18 @@
 			}
 			
 			/*
+			Involvements
+			*/
+			.involvement {
+				padding: 5px 5px 0 5px;
+				vertical-align: top;
+				margin-bottom: 5px;
+				
+				background: #ffffff;
+				border: 1px solid #747474;
+			}
+			
+			/*
 			Events
 			*/
 			.event {
@@ -437,6 +449,37 @@
 							</tr>
 						</table>
 						
+						<div class="heading">
+							<h2>Coming Up @ RHMV</h2>
+							<a href="http://missionviejo.rockharbor.org/calendar">See full calendar</a>
+							<div class="clear"></div>
+						</div>
+						
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr mc:repeatable class="threecol">
+								<td>
+									<div class="event">
+										<h2 mc:edit="event-date-1" class="secondary">Dec. 25</h2>
+										<p mc:edit="event-details-1"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td>
+									<div class="event">
+										<h2 mc:edit="event-date-2" class="secondary">Dec. 25</h2>
+										<p mc:edit="event-details-2"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+								</td>
+								<td class="separator">&nbsp;</td>
+								<td>
+									<div class="event">
+										<h2 mc:edit="event-date-3" class="secondary">Dec. 25</h2>
+										<p mc:edit="event-details-3"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+									</div>
+								</td>
+							</tr>
+						</table>
+						
 						<table border="0" cellspacing="0" cellpadding="0">
 							<tr>
 								<td style="width:32%">
@@ -448,9 +491,7 @@
 								<td class="separator">&nbsp;</td>
 								<td>
 									<div class="heading">
-										<h2>Coming up @ RHMV</h2>
-										<a href="http://missionviejo.rockharbor.org/calendar">See full calendar</a>
-										<div class="clear"></div>
+										<h2>Get Involved</h2>
 									</div>
 								</td>
 							</tr>
@@ -459,7 +500,7 @@
 									<div mc:edit="sermon-graphic" mc:allowdesigner>
 										<img src="http://rh-org.s3.amazonaws.com/wp-content/uploads/2012/04/More-Archive.jpg" />
 									</div>
-									<h2 class="secondary" mc:edit="sermon-date">Nov 12</h2>
+									<h2 class="secondary" mc:edit="sermon-date">Nov. 12</h2>
 									<p mc:edit="sermon-title">The Title</p>
 								</td>
 								<td class="separator">&nbsp;</td>
@@ -467,16 +508,16 @@
 									<table border="0" cellspacing="0" cellpadding="0">
 										<tr mc:repeatable>
 											<td>
-												<div class="event">
-													<h2 mc:edit="event-date-1" class="secondary">Dec 25</h2>
-													<p mc:edit="event-details-1"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+												<div class="involvement">
+													<h2 mc:edit="involvement-date-1" class="secondary">Involvement Title</h2>
+													<p mc:edit="involvement-details-1">Involvement details</p>
 												</div>
 											</td>
 											<td class="separator">&nbsp;</td>
 											<td>
-												<div class="event">
-													<h2 mc:edit="event-date-2" class="secondary">Dec 25</h2>
-													<p mc:edit="event-details-2"><a href="https://core.rockharbor.org" title="Read More">Some event link</a></p>
+												<div class="involvement">
+													<h2 mc:edit="involvement-date-2" class="secondary">Involvement Title</h2>
+													<p mc:edit="involvement-details-2">Involvement details</p>
 												</div>
 											</td>
 										</tr>
